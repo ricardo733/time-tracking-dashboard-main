@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red: hsl(15, 100%, 70%);
+  --Soft-blue: hsl(195, 74%, 62%);
+  --Light-red: hsl(348, 100%, 68%);
+  --Lime-green: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --Soft-orange: hsl(21, 78%, 60%);
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(236, 55%, 18%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 68%, 88%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  background-color: var(--Very-dark-blue);
+  color: var(--Pale-Blue);
+}
+.main-container {
+  width: 375px;
+  margin: 0 auto;
+  padding: 80px 25px;
+}
+.first-section {
+  width: 328px;
+  height: 205px;
+  background-color: var(--Dark-blue);
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+.main-card {
+  width: 328px;
+}
+.main-card__user {
+  background-color: var(--Blue);
+  width: 328px;
+  height: 133px;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main-card__user__img {
+  width: 70px;
+  border: 4px solid var(--Pale-Blue);
+  border-radius: 50%;
+}
+.main-card__title {
+  font-size: 0.8em;
+  color: var(--Pele-blue);
+}
+.main-card__name {
+  font-size: 1.33em;
+}
+.main-card__dates {
+  display: flex;
+  padding: 25px;
+  justify-content: space-between;
+  font-size: 1.1em;
+  color: var(--Desaturated-blue);
+}
+.main-card__data:hover {
+  cursor: pointer;
+  color: var(--Pale-Blue);
+}
+.second-section {
+  margin-bottom: 25px;
+}
+.card {
+  position: relative;
+  margin-bottom: 105px;
+}
+.card__background {
+  background-color: var(--Soft-orange);
+  height: 80px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  display: flex;
+  justify-content: right;
+  overflow: hidden;
+}
+.card__background__img {
+  padding-right: 20px;
+  margin-top: -10px;
+}
+.card-details {
+  background-color: var(--Dark-blue);
+  border-radius: 16px;
+  height: 122px;
+  position: absolute;
+  width: 100%;
+  bottom: -85px;
+  padding: 25px;
+}
+.card-details:hover {
+  background-color: var(--Desaturated-blue);
+  cursor: pointer;
+}
+.card-activity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.card__hours {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__hour {
+  font-size: 1.9em;
+  font-weight: 300;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (min-width: 1150px) {
+  .main-container {
+    width: 1115px;
+    height: 526px;
+    margin: 150px auto;
+    display: flex;
+    padding: 0 0;
+    position: relative;
+  }
+  .first-section {
+    width: 260px;
+    height: 526px;
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+  .second-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin: 0 auto;
+  }
+  .second-section1 {
+    margin: 0 auto;
+
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .main-card {
+    width: 258px;
+    height: 526px;
+    padding: 0;
+    margin: 0;
+  }
+  .main-card__user {
+    width: 258px;
+    height: 360px;
+    display: block;
+  }
+  .main-card__user__img {
+    margin-bottom: 35px;
+    width: 90px;
+  }
+  .main-card__dates {
+    display: block;
+    line-height: 35px;
+  }
+  .main-card__title {
+    margin-bottom: 20px;
+  }
+  .main-card__name {
+    font-size: 2.2em;
+    font-weight: 300;
+  }
+  .card {
+    width: 255px;
+    height: 250px;
+
+    margin-bottom: -35px;
+  }
+  .card__hours {
+    display: block;
+  }
+  .card__hour {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+  .card__previous {
+    font-size: 0.75em;
+    color: var(--Desaturated-blue);
+  }
+  .card__background {
+    width: 255px;
+  }
+  .card-details {
+    top: 50px;
+    height: 200px;
+  }
+  footer {
+    position: absolute;
+  }
+  .attribution {
+    display: flex;
+    top: 600px;
+    left: 400px;
+  }
+}
